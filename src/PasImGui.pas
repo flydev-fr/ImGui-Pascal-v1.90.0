@@ -383,6 +383,7 @@ Type
     Class Function Button(_label: AnsiString; size: ImVec2): Boolean; Overload;
     Class Function Button(_label: AnsiString): Boolean; Overload; //overload for default size (0,0)
     class function ArrowButton(_label: AnsiString; _dir: ImGuiDir): Boolean;
+    {$IfDef INLINE} inline;{$EndIf}
     Class Function SmallButton(_label: PAnsiChar): Boolean;
     {$IfDef INLINE} inline;{$EndIf}
     Class Function InvisibleButton(str_id: PAnsiChar; size: ImVec2;
